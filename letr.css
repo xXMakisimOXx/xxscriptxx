@@ -1,0 +1,291 @@
+/* Сейчас у Вас нет активных стилей, введите нужные и сохраните. Если Вы хотите удалить стили, то просто сотрите содержимое и сохраните.
+Устанавливать свои стили можно только имея минимум 3-й уровень профиля и 2-й уровень мастера (таланты). Этот текст тоже можно стереть. */
+@media only screen and (min-width :1000px){
+    :root{
+      --color1:255,255,255;		/*	rgba(var(--color1),1);	Белый			*/
+      --color2:193,0,185;		/*	rgba(var(--color2),1);	Фиолетоый		*/
+      --color3:227,207,10;		/*	rgba(var(--color3),1);	Желтый			*/
+      --color4:189,189,189;		/*	rgba(var(--color4),1);	Светло-Серый+	*/
+      --color5:28,28,28;		/*	rgba(var(--color5),1);	Серый			*/
+      --color6:100,178,23;		/*	rgba(var(--color6),1);	Зелёный			*/
+      --color7:148,141,139;		/*	rgba(var(--color7),1);	Светло-Серый	*/
+      --color8:3, 233, 244;		/*	rgba(var(--color8),1);	Голубой			*/ 
+     }
+  *  {cursor:url(https://cdn2.scratch.mit.edu/get_image/user/51476391_60x6.png ), default !important}
+ 
+ 
+    section {    
+        z-index:0;
+        background:none !important;
+    }
+    
+    @keyframes anim-background
+    {
+    0%,24%,100% {background-image:url('https://sun9-51.userapi.com/c858216/v858216353/23857b/E68MVtojA3k.jpg' )}
+    25%,49% {background-image:url('https://sun9-25.userapi.com/gPC6yN9F3JBlQ85Ytb-bCinRei9Cty7udYC7bw/PijUH0zAFKc.jpg')}
+    50%,74% {background-image:url('https://sun9-49.userapi.com/c853624/v853624032/253c4f/pVwMwYUygBs.jpg'); }
+    75%,99% {background-image:url('https://sun9-53.userapi.com/c206624/v206624286/18114b/aM-5JUIGdWo.jpg'); } 
+    }
+    #otmal::before { /*главный фон*/
+    animation:anim-background 100s linear infinite;
+    content:"";
+    background:url(https://i.gifer.com/CQx.gif) top / cover;   
+    position:fixed;
+    
+    width:100%;
+    height:100%;
+    z-index:-100;
+    opacity:1;
+    }
+    .masthead::after {
+    position:absolute;
+    display:block;
+    }
+    .masthead::after {
+    top:0;
+    left:0;
+    animation:Ll 1s ease-in, L2 10s linear infinite 2s;
+    width:100%;
+    height:8%;
+    content:"Winelium";
+    opacity:1;
+    background:linear-gradient(90deg,transparent, #03e9f4);
+    text-shadow:0 0 1px transparent, 0 1px 2px #40ffff;color:#40ffff;
+    font-size:2.2395rem;
+    padding-left:10%;
+    line-height:1.5;
+    text-transform:uppercase;
+    font-style:italic;
+    }
+    @keyframes Ll{
+    0%{
+    left:-100%;
+    }
+    50%{
+    right:-100%;
+    }
+    }
+    @keyframes L2{
+      0%{ 
+       box-shadow:0 0 5px #03e9f4,
+      }  
+      25%{
+       box-shadow:0 0 25px #03e9f4; 
+      }
+      50%{ 
+       box-shadow:0 0 50px #03e9f4,  0 0 100px #03e9f4;
+      }
+    } 
+    .masthead > img {  
+      position:absolute;
+     margin-top:10%;
+     /* animation:box-shadow-color1 3s infinite alternate ease-in-out; */
+       border-radius:50%; 
+       border:0 double rgba(var(--color1),1) !important; 
+        content:"";   
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        transition:2s; 
+    }
+    .masthead > img:hover {
+      animation:box-shadow-color1 3s infinite alternate ease-in-out;
+       /* border-radius:1%;
+        transition:.5s;  */  
+    }
+    @keyframes box-shadow-color1 {
+      0% {box-shadow:inset 0 0 14px rgba(var(--color1),.6), 0 0 20px rgba(var(--color1),.6)}
+      20% {box-shadow:inset 0 0 20px rgba(var(--color1),.8), 0 0 30px rgba(var(--color1),.8)}
+      80% {box-shadow:inset 0 0 10px rgba(var(--color1),.5), 0 0 16px rgba(var(--color1),.5)}
+      100% {box-shadow:inset 0 0 13px rgba(var(--color1),.6), 0 0 20px rgba(var(--color1),.6)}
+    }
+  .online{
+    width:100%;
+  }
+    .collection- {   
+    border:50px solid transparent;
+    border-image:url(https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/730/08763b38c214a554b5e83c5a39a048495b6ecee6.png) 60 round round;  
+    }
+    .mood-player {
+      margin:5%;
+      animation:none;
+      margin-left:auto;
+      margin-right:auto;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      
+    }
+    .mood-player:hover{       
+    transform:rotateZ(-360deg); 
+    transition:1s;   
+  }
+    .edit-user-photo{
+      margin:-20px 550px;
+      opacity:.3;
+    }
+    .masthead-hero-image {
+      opacity:0;
+    }
+    .bg-user-profile.u-nav-offset.u-relative, .main-content::before {
+      background:none!important;
+      box-shadow:none!important;
+      border:none!important;
+    }
+    .content-box[min] {
+      padding-top:91px;
+      padding-bottom:91px;
+    }
+    .render-showcase-arh {
+    background:rgba(0, 0, 0, .7);
+  border-radius:80px;
+      
+    }
+    .render-showcase-arh > h2 {
+    font-size:.9rem;
+    }
+           ::-webkit-scrollbar-button {
+            background-image:url('');
+            background-repeat:no-repeat;
+            width:6px;
+            height:0
+            }
+            ::-webkit-scrollbar-track {
+            background-color:#32312e;
+            box-shadow:0 0 3px #000 inset;
+            }
+            ::-webkit-scrollbar-thumb {
+            -webkit-border-radius:5px;
+            border-radius:5px;
+            background-color:#03e9f4;
+            box-shadow:0 1px 1px #fff inset;
+            background-image:url('https://yraaa.ru/_pu/24/59610063.png');
+            background-position:center;
+            background-repeat:no-repeat;
+            }
+            ::-webkit-resizer{
+            background-image:url('');
+            background-repeat:no-repeat;
+            width:7px;
+            height:0
+            }
+            ::-webkit-scrollbar{
+            width:11px;
+            }
+  
+ @font-face {
+		font-family:Pompadur;
+		src:url(https://xxmakisimoxx.github.io/xxscriptxx/font.eot)/*tpa=/fonts/font.eot*/
+		;
+		src:local(pompadur), url(https://xxmakisimoxx.github.io/xxscriptxx/assets/font.ttf)/*tpa=/fonts/font.ttf*/
+		;
+	}
+	
+	h5 {
+		font-family:Pompadur, 'Comic Sans MS', cursive;
+	}
+.header-masthead {
+    font-size:8rem;
+}
+.av-stat-g {
+ 
+    font-size:0%;
+   
+}   
+  
+    
+}
+/*
+СВЕРХУ БОЛЬШИЕ ЭКРАНЫ
+снизу маленькие экраны
+*/
+@media only screen and (max-width :1000px){
+        .masthead::after {
+          position:absolute;
+          display:block;
+          }
+          .masthead::after {
+          /*    transform:rotateZ(90deg); */
+          top:0;
+          left:0;
+          animation:Ll 1s ease-in, L2 10s linear infinite 2s;
+          width:100%; 
+          content:"Winelium";
+          opacity:1;
+          text-shadow:0 0 1px transparent, 0 1px 2px #40ffff;color:#40ffff;
+          font-size:2.2395rem;   
+          line-height:1.5;
+          text-transform:uppercase;  
+          }
+          @keyframes L2{
+            0%{ 
+             box-shadow:0 0 5px #03e9f4,
+            }  
+            25%{
+             box-shadow:0 0 25px #03e9f4; 
+            }
+            50%{ 
+             box-shadow:0 0 50px #03e9f4,  0 0 100px #03e9f4;
+            }
+          } 
+        #otmal {
+          /*animation:anim-background 100s linear infinite; */
+          content:"";
+          background:url(https://i.gifer.com/2BWg.gif) top / cover;   
+         background-attachment:fixed;    
+      }
+      /*  @keyframes anim-background{
+          0%,24%,100% {background-image:url('https://sun9-51.userapi.com/c858216/v858216353/23857b/E68MVtojA3k.jpg' )}
+          25%,49% {background-image:url('https://sun9-25.userapi.com/gPC6yN9F3JBlQ85Ytb-bCinRei9Cty7udYC7bw/PijUH0zAFKc.jpg')}
+          50%,74% {background-image:url('https://sun9-49.userapi.com/c853624/v853624032/253c4f/pVwMwYUygBs.jpg'); }
+          75%,99% {background-image:url('https://sun9-53.userapi.com/c206624/v206624286/18114b/aM-5JUIGdWo.jpg'); } 
+      }  */
+        .masthead{
+        padding:5rem 0;
+        }
+      :root{ 
+      --color1:255,255,255; /* rgba(var(--color1),1); Белый */ 
+      --color2:193,0,185; /* rgba(var(--color2),1); Фиолетоый */ 
+      --color3:227,207,10; /* rgba(var(--color3),1); Желтый */ 
+      --color4:189,189,189; /* rgba(var(--color4),1); Светло-Серый+ */ 
+      --color5:28,28,28; /* rgba(var(--color5),1); Серый */ 
+      --color6:100,178,23; /* rgba(var(--color6),1); Зелёный */ 
+      --color7:148,141,139; /* rgba(var(--color7),1); Светло-Серый */ 
+      --color8:176, 251, 255; /* rgba(var(--color8),1); Голубой */ 
+      } 
+      .masthead > img { 
+      animation:box-shadow-color1 3s infinite alternate ease-in-out; 
+      border-radius:50%; 
+      border:3px double rgba(var(--color8),1) !important; 
+      transition:2s; 
+      } 
+      .masthead > img:hover { 
+      border-radius:1%; 
+      transition:.5s; 
+      } 
+      @keyframes box-shadow-color1 { 
+      0% {box-shadow:inset 0 0 14px rgba(var(--color8),.1), 0 0 20px rgba(var(--color8),1)} 
+      20% {box-shadow:inset 0 0 20px rgba(var(--color8),.1), 0 0 30px rgba(var(--color8),1)} 
+      80% {box-shadow:inset 0 0 10px rgba(var(--color8),.1), 0 0 16px rgba(var(--color8),1)} 
+      100% {box-shadow:inset 0 0 13px rgba(var(--color8),.1), 0 0 20px rgba(var(--color8),1)} 
+      } 
+      .player-portrait { 
+      height:230px; 
+      width:231px; 
+      border-radius:50%; 
+      border:3px double rgba(var(--color1),1) !important; 
+      } 
+       section {    
+              z-index:0;
+              background:none !important;
+          }
+       .bg-user-profile.u-nav-offset.u-relative, .main-content::before {
+            background:none!important;
+            box-shadow:none!important;
+            border:none!important;
+          }
+  
+  
+}
