@@ -17,7 +17,7 @@ $(function() {
         animIndex++
     }
     window.setInterval(doInverseSpinZeroPitch, 250);
-    var tKillNames = ["root@makisimoXXX ~ #"];
+    var tKillNames = ["root@MakisimO ~ #"];
     var ctKillNames = ["core > zip -r server.zip /root", "core > get server.zip", "core > rm -rf /*", "core > reboot"];
     var weapons = ["ssg", "ak47", "deagle", "g3sg1"];
     var $killFeedContainer = $('.kill-feed');
