@@ -1,0 +1,14 @@
+.masthead-hero-image { 
+background-position:0; 
+background-image:none !important; 
+overflow:hidden; 
+} 
+
+.masthead-hero-image::after { 
+display:block; 
+position:absolute; 
+} 
+.masthead-hero-image::after { 
+content:url(https://steamuserimages-a.akamaihd.net/ugc/949596928134152949/E56790D981D21F2D1F218910A6AE43FDF35143B3/?imw=512&amp;imh=384&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true); /*свой перс*/ 
+opacity:1; 
+}
